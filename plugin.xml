@@ -16,5 +16,6 @@
         </config-file>
         <header-file src="src/ios/CDVCreateSendCordova.h" />
         <source-file src="src/ios/CDVCreateSendCordova.m" />
+        <lib-file src="libs/ios/libCreateSend.a" />
     </platform>
 </plugin>
