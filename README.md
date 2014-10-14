@@ -1,4 +1,4 @@
 cordova-plugin-createsend
 =========================
 
-Campaign Monitor suscriber plugin for Cordova
+Campaign Monitor subscriber plugin for Cordova

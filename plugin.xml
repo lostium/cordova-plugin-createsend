@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+            id="com.lostium.cordova.createsend" version="0.0.1">
+    <name>CreateSendCordova</name>
+    <description>Campaign Monitor subcriber plugin for Cordova</description>
+    <license>Apache 2.0</license>
+    <keywords>cordova,campaign monitor, subscriber, newsletter</keywords>
+    <js-module src="www/createsend.js" name="CreateSend">
+        <clobbers target="CreateSemd" />
+    </js-module>
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="CreateSendCordova">
+                <param name="ios-package" value="CDVCreateSendCordova"/>
+            </feature>
+        </config-file>
+        <header-file src="src/ios/CDVCreateSendCordova.h" />
+        <source-file src="src/ios/CDVCreateSendCordova.m" />
+    </platform>
+</plugin>
